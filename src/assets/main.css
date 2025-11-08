@@ -1,0 +1,84 @@
+/* =========================================
+   Global styles & variables
+   ========================================= */
+:root {
+  /* 1rem = 10px (base 16px -> 62.5%) */
+  font-size: 62.5%;
+
+  /* Light mode colors */
+  --bg: #f8f9fa;
+  --surface: #ffffff;
+  --primary: #2563eb;
+  --text: #1f2937;
+  --text-secondary: #4b5563;
+  --radius: .8rem;
+  --shadow: 0 .2rem 0.8rem rgba(0, 0, 0, 0.1);
+}
+
+/* =========================================
+   Dark mode overrides
+   ========================================= */
+html.dark {
+  --bg: #111827;
+  --surface: #1f2937;
+  --primary: #3b82f6;
+  --text: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --shadow: 0 .2rem .8rem rgba(0, 0, 0, .4);
+}
+
+/* =========================================
+   Base styles
+   ========================================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  transition: background .3s ease, color .3s ease;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 1.6rem;
+  color: var(--primary);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+p {
+  margin: 0;
+  font-size: 1.6rem;
+  color: var(--text-secondary);
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radius);
+  background-color: var(--primary);
+  color: white;
+  font-size: 1.6rem;
+  padding: .8rem 1.6rem;
+  transition: background .2s;
+}
+
+button:hover {
+  background-color: #1e40af;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
