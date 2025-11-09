@@ -9,7 +9,6 @@ A modern, responsive chat application built with Vue 3, TypeScript, and Vite tha
 - **📱 Responsive Design**: Works perfectly on desktop and mobile devices
 - **⚡ Fast Performance**: Built with Vite for lightning-fast development and builds
 - **🔧 Type-Safe**: Full TypeScript support for better development experience
-- **♿ Accessible**: Proper ARIA labels and keyboard navigation
 - **🎨 Modern UI**: Clean, minimalist design with smooth animations
 - **🧪 Comprehensive Testing**: Full test coverage with Vitest and Vue Test Utils
 
