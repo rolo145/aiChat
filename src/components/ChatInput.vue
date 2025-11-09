@@ -44,9 +44,10 @@ const handleSubmit = () => {
       v-model="text"
       type="text"
       placeholder="Type your message..."
-      :disabled="loading"
-    />
-    <button :disabled="loading || !text.trim()">
+      :disabled="loading" />
+    <button
+      :disabled="loading || !text.trim()"
+      @click="handleSubmit">
       {{ loading ? "..." : 'Send' }}
     </button>
   </form>

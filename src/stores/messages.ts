@@ -3,6 +3,9 @@ import { SENDER_TYPE, type Message } from "@/types/Message";
 import { defineStore } from "pinia";
 import { ref } from "vue";
 
+/**
+ * Pinia store for managing chat messages and state
+ */
 export const useMessagesStore = defineStore("messages", () => {
   const messages = ref<Message[]>([]);
   const loading = ref(false);
@@ -62,7 +65,21 @@ export const useMessagesStore = defineStore("messages", () => {
     messages.value = [];
   };
 
+  const $reset = () => {
+    messages.value = [];
+    loading.value = false;
+  };
+
   return {
-    messages, loading, sendMessage, clearChat,
+    // State
+    messages,
+    loading,
+
+    // Actions
+    sendMessage,
+    clearChat,
+
+    // Reset
+    $reset,
   };
 });

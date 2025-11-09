@@ -8,7 +8,10 @@ import { useMessagesStore } from "@/stores/messages";
 import ChatInput from "@/components/ChatInput.vue";
 
 const store = useMessagesStore();
-const { messages, loading } = storeToRefs(store);
+const {
+  messages,
+  loading,
+} = storeToRefs(store);
 
 // Reference to the messages container and input
 const messagesContainer = ref<HTMLElement>();
